@@ -214,6 +214,14 @@ body{
     font-weight: 500;
 }
 
+.spotify-playlists .list {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 10px;
+}
+
 .spotify-playlists hr {
     margin: 70px 0px 0px;
     border-color: #636363;
@@ -255,7 +263,23 @@ body{
     cursor: pointer;
 }
 
+/* Barra de rolagem playlists*/
+.spotify-playlists .list::-webkit-scrollbar {
+    height: 10px;
+}
 
+.spotify-playlists .list::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+.spotify-playlists .list::-webkit-scrollbar-thumb {
+    background: #535353;
+    border-radius: 5px;
+}
+
+.spotify-playlists .list::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
 
 
 
